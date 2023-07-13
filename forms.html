@@ -8,22 +8,34 @@
 </head>
 <body>
     <h1>This Page demonstrates forms</h1>
-    <form action="">
+    <h2><a href="index.html">Back to Index</a></h2>
+    <form action="" method="get">
         <!-- Text inputs -->
-        First Name: <input type="text">
+        First Name: <input type="text" name="first-name">
         <br>
-        Last Name: <input type="text">
+        Last Name: <input type="text" name="last-name">
         <br>
         <!-- Required means that the field must be entered before submitting -->
-        Email: <input type="email" required>
+        Email: <input type="email" required name="email">
         <br>
-        Birthday: <input type="date">
+        Birthday: <input type="date" name="birthday">
         <br>
-        Gender:<br> <input type="radio" name="gender"> Male <br><input type="radio" name="gender"> Female <br><input type="radio" name="gender"> Other
+        Password: <input type="password" minlength="5" maxlength="10" required name="password">
         <br>
-        Pets: <br><input type="checkbox"> Dogs <br><input type="checkbox"> Cats <br><input type="checkbox"> Fish
-        
-        
+        Gender:<br> <input type="radio" name="gender" value="male"> Male <br><input type="radio" name="gender" value="female"> Female <br><input type="radio" name="gender" value="other"> Other
+        <br>
+        Pets: <br><input type="checkbox" name="dogs"> Dogs <br><input type="checkbox" name="cats"> Cats <br><input type="checkbox" name="fish"> Fish
+        <br>
+
+        <!-- Select Options -->
+        Cars: <br>
+        <!-- Select options: Multiple -- <select name="" id="" Multiple> -->
+        <select name="" id="">
+            <option value="volvo">Volvo</option>
+            <option value="beetle">Beetle</option>
+            <option value="jeep">Jeep</option>
+        </select>
+
         <br>
 
         <!-- Submit Button -->
@@ -31,5 +43,10 @@
         <!-- Reset Button -->
         <input type="reset"> 
     </form>
+
+    <!-- Submitting with look like this: -->
+    <!-- http://127.0.0.1:5500/forms.html?first-name=fake&last-name=fakeman&email=fake%40gmail.com&birthday=2023-07-05&password=12345&gender=on&dogs=on -->
+    <!-- Adding method="POST" blocks this from appearing-->
+
 </body>
 </html>
