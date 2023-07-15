@@ -1,0 +1,37 @@
+body{
+    background-image: url(../Images/StickFigure.png);
+}
+*{
+    text-align: center;
+    margin: 1rem 3rem;
+}
+h1{
+    color: red;
+    cursor: pointer;
+}
+h2{
+    border: 0.5rem solid rgb(0, 259, 132);
+    color: green;
+}
+h3{
+    border: 0.5rem solid rgba(0, 259, 132,0.4);
+    color: pink;
+}
+h4{
+    color: blue;
+}
+
+.header-class{
+    text-decoration: underline;
+}
+#intro-header{
+    color: aqua;
+}
+
+#radio:hover{
+    transform: scale(1.1);
+}
+#radio{
+    transition: all 1s;
+    float: left;
+}
